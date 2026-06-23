@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "question": "Tell me about yourself.",
+    "answer": "Give a concise summary of your relevant background, strengths, and what you are looking for next.",
+    "note": ""
+  },
+  {
+    "id": 2,
+    "question": "Why are you interested in this role?",
+    "answer": "Connect the role requirements to your experience, interests, and the value you can bring to the team.",
+    "note": ""
+  },
+  {
+    "id": 3,
+    "question": "Describe a challenging problem you solved.",
+    "answer": "Use a clear structure: situation, task, action, result. Focus on your specific contribution and measurable impact.",
+    "note": ""
+  }
+]

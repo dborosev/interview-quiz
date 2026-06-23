@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#172033" />
+    <title>Interview Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="app-title">
+        <div>
+          <p class="eyebrow">Practice deck</p>
+          <h1 id="app-title">Interview Quiz</h1>
+        </div>
+        <button id="reshuffleBtn" class="ghost-btn" type="button">Shuffle</button>
+      </section>
+
+      <section id="statusPanel" class="status-panel" aria-live="polite">
+        Loading questions…
+      </section>
+
+      <section id="quizCard" class="quiz-card hidden" aria-live="polite">
+        <div class="card-topline">
+          <span id="progressText">Question 1 of 1</span>
+          <span id="questionId" class="pill">#1</span>
+        </div>
+
+        <article class="prompt-block">
+          <h2>Question</h2>
+          <p id="questionText"></p>
+        </article>
+
+        <article id="answerBlock" class="answer-block hidden">
+          <h2>Answer</h2>
+          <p id="answerText"></p>
+        </article>
+
+        <div class="primary-actions">
+          <button id="showAnswerBtn" class="primary-btn" type="button">Show answer</button>
+          <button id="copyBtn" class="secondary-btn" type="button">Copy Q + A</button>
+        </div>
+
+        <label class="note-label" for="noteInput">
+          Your note for Hermes / follow-up
+          <span>Saved in this browser until you export.</span>
+        </label>
+        <textarea id="noteInput" rows="5" placeholder="Example: I want this answer rewritten to sound more concise."></textarea>
+
+        <div class="nav-actions">
+          <button id="prevBtn" class="ghost-btn" type="button">← Previous</button>
+          <button id="nextBtn" class="ghost-btn" type="button">Next →</button>
+        </div>
+      </section>
+
+      <section class="export-card">
+        <h2>Export notes</h2>
+        <p>
+          When you want me to update the deck, tap export and send me the file or paste the report here.
+          It includes each question number, question text, answer text, and your note.
+        </p>
+        <div class="export-actions">
+          <button id="exportJsonBtn" class="secondary-btn" type="button">Download updated JSON</button>
+          <button id="exportReportBtn" class="secondary-btn" type="button">Copy notes report</button>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
