@@ -23,8 +23,14 @@
 
       <section id="quizCard" class="quiz-card hidden" aria-live="polite">
         <div class="card-topline">
-          <span id="progressText">Question 1 of 1</span>
-          <span id="questionId" class="pill">#1</span>
+          <div class="question-meta">
+            <span id="progressText">Question 1 of 1</span>
+            <span id="questionId" class="pill">#1</span>
+          </div>
+          <div class="nav-actions" aria-label="Question navigation">
+            <button id="prevBtn" class="ghost-btn" type="button">← Previous</button>
+            <button id="nextBtn" class="ghost-btn" type="button">Next →</button>
+          </div>
         </div>
 
         <article class="prompt-block">
@@ -47,11 +53,6 @@
           <span>Saved in this browser until you export.</span>
         </label>
         <textarea id="noteInput" rows="5" placeholder="Example: I want this answer rewritten to sound more concise."></textarea>
-
-        <div class="nav-actions">
-          <button id="prevBtn" class="ghost-btn" type="button">← Previous</button>
-          <button id="nextBtn" class="ghost-btn" type="button">Next →</button>
-        </div>
       </section>
 
       <section class="export-card">
